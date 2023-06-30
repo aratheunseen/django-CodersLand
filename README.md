@@ -49,6 +49,4 @@ To get started with CodersLand, follow these steps:
 
 7. Access CodersLand: Open your web browser and visit `http://localhost:8000` to access the CodersLand application.
 
-8. Generate Your Portfolio: Enter your GitHub username in the provided field and click the "Generate Portfolio" button. CodersLand will fetch your GitHub data using the GitHub API and display your portfolio.
-
-Now you are all set to explore CodersLand, generate personalized portfolios, and showcase your coding projects and contributions in an automated and user-friendly manner. Happy coding!
+Now you are all set to explore CodersLand, generate personalized portfolios, and see your or others' profiles, projects, connections and contributions in an automated and user-friendly manner.
