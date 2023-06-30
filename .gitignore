@@ -1,4 +1,3 @@
 .env
 .vscode
 main/config.py
-main/migrations
