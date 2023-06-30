@@ -26,9 +26,11 @@
             <a class="custom-btn btn custom-link">
               {%if error.message == 'Not Found'%}
                 Error 404: Page not found
-              {% else %}
-                Error: {{error.message}}
-              {% endif %}
+              {%elif error.message == 'Internal Server Error'%}
+                Error 500: Internal Server Error
+              {%else%}
+                {{error.message}}
+              {%endif%}
             </a>
           </p>
         </div>
@@ -37,7 +39,7 @@
       <div class="col-lg-5 col-12 position-relative">
         <div class="hero-image-wrap"></div>
         <img
-          src="{% static '/'%}images/error.svg"
+          src="{% static '/'%}images/bug_fixing.svg"
           class="hero-image img-fluid rounded"
           style="min-width: 415px; max-width: 75%"
           alt=""
