@@ -8,10 +8,10 @@ CodersLand
 </p>
 
 <p align="center">
-      <img alt="Signatures' License" src="https://img.shields.io/github/license/aratheunseen/codersland?style=for-the-badge">
-  <img alt="Signatures' Workflow Status (with branch)" src="https://img.shields.io/github/actions/workflow/status/aratheunseen/codersland/test.yml?branch=main&label=Build&style=for-the-badge">
-    <img alt="Signatures' Code Size" src="https://img.shields.io/github/languages/code-size/aratheunseen/codersland?style=for-the-badge">
-    <img alt="Top Language used in Signature" src="https://img.shields.io/github/languages/top/aratheunseen/codersland?style=for-the-badge&logo=dart&color=lightblue">
+      <img alt="coderslands' License" src="https://img.shields.io/github/license/aratheunseen/codersland?style=for-the-badge">
+  <img alt="coderslands' Workflow Status (with branch)" src="https://img.shields.io/github/actions/workflow/status/aratheunseen/codersland/django.yml?branch=main&label=Build&style=for-the-badge">
+    <img alt="coderslands' Code Size" src="https://img.shields.io/github/languages/code-size/aratheunseen/codersland?style=for-the-badge">
+    <img alt="Top Language used in codersland" src="https://img.shields.io/github/languages/top/aratheunseen/codersland?style=for-the-badge&logo=dart&color=lightblue">
 </p>
 
 <img src="https://github.com/aratheunseen/codersland/assets/62181222/376f0cb2-4e66-4dd5-a2ce-1feb0a456582" width="100%">
