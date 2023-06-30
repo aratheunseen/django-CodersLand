@@ -1,5 +1,4 @@
 .env
 .vscode
 main/config.py
-main/__pycache__
 main/migrations
