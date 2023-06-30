@@ -1,0 +1,102 @@
+{% extends 'base.html '%}
+{% load static %}
+{% block title %} {{user.name}} ({{user.login}})'s Projects  | {{site_name}} {% endblock %}
+{% block content %}
+
+<section
+  class="hero d-flex justify-content-center align-items-center" style="background: #535da1; padding-top: 100px!important; padding-bottom: 0px; height: 10px;"
+  id="projects">
+</section>
+
+<div class="text-center p-3">
+  Design of This Page is Under Construction
+</div>
+
+<section class="featured section-padding" id="projects">
+  <div class="container">
+    <div class="row mb-0">
+      <div class="col-lg-12 col-12">
+        <div class="profile-thumb">
+          <div class="profile-title">
+            <h4 class="mb-0">Public Repositories <span class="featured-text" style="float: right;">({{user.public_repos}})</span></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row rounded">
+      <div class="col-lg-12 col-12">
+        <div class="profile-wrapper">
+          <div class="profile-body">
+            <style>
+              table{
+                width: 100%;
+                border-collapse: collapse;
+                border: 1px solid #fff;
+
+              }
+
+              th {
+                border: 1px solid #ccc;
+                text-align: left;
+                padding: 16px;
+                text-align: center;
+              }
+
+              td {
+                border: 1px solid #ccc;
+                text-align: left;
+                padding: 8px;
+              }
+
+              tr:nth-child(even) {
+                background-color: #eee;
+              }
+            </style>
+            <table>
+              <tr>
+                <th>
+                  Name
+                </th>
+                <th>
+                  Description
+                </th>
+                <th>
+                  Language
+                </th>
+                <th>
+                  Stars
+                </th>
+                <th>
+                  Forks
+                </th>
+              </tr>
+              {% for repo in repos %}
+              <tr>
+                <td>
+                  <a href="{{repo.id}}" target="_blank">
+                    <span class="profile-small-title">{{repo.name}}</span>
+                  </a>
+                </td>
+                <td>
+                  {{repo.description}}
+                </td>
+                <td class="text-center">
+                  {{repo.language}}
+                </td>
+                <td class="text-center">
+                  {{repo.stargazers_count}}
+                </td>
+                <td class="text-center">
+                  {{repo.forks_count}}
+                </td>
+              </tr>
+              {% endfor %}
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
