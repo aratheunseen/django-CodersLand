@@ -36,7 +36,7 @@ To get started with CodersLand, follow these steps:
    pip install -r requirements.txt
    ```
 
-4. Configure GitHub API Access: Obtain a GitHub API access token by creating a new personal access token in your GitHub account settings. Rename the `config-demo.py` file to `config.py` in the `main` folder  and update site name, url and the `GITHUB_PAT` variable with your private access token.
+4. Configure GitHub API Access: Obtain a GitHub API access token by creating a new personal access token in your GitHub account settings. Rename the `config-demo.py` file to `config.py` in the `main` folder  and update `SITE_NAME`, `SITE_URL` and the `GITHUB_PAT` variable with your private access token.
 
 5. Run Database Migrations: Apply the database migrations using the following command:
    ```
