@@ -8,10 +8,10 @@ CodersLand
 </p>
 
 <p align="center">
-      <img alt="Signatures' License" src="https://img.shields.io/github/license/aratheunseen/codersland?style=for-the-badge">
-  <img alt="Signatures' Workflow Status (with branch)" src="https://img.shields.io/github/actions/workflow/status/aratheunseen/codersland/test.yml?branch=main&label=Build&style=for-the-badge">
-    <img alt="Signatures' Code Size" src="https://img.shields.io/github/languages/code-size/aratheunseen/codersland?style=for-the-badge">
-    <img alt="Top Language used in Signature" src="https://img.shields.io/github/languages/top/aratheunseen/codersland?style=for-the-badge&logo=dart&color=lightblue">
+    <!-- img alt="coderslands' License" src="https://img.shields.io/github/license/aratheunseen/codersland?style=for-the-badge" -->
+    <img alt="coderslands' Workflow Status (with branch)" src="https://img.shields.io/github/actions/workflow/status/aratheunseen/codersland/django.yml?branch=main&label=Build&style=for-the-badge">
+    <img alt="coderslands' Code Size" src="https://img.shields.io/github/languages/code-size/aratheunseen/codersland?style=for-the-badge">
+    <img alt="Top Language used in codersland" src="https://img.shields.io/github/languages/top/aratheunseen/codersland?style=for-the-badge&logo=dart&color=lightblue">
 </p>
 
 <img src="https://github.com/aratheunseen/codersland/assets/62181222/376f0cb2-4e66-4dd5-a2ce-1feb0a456582" width="100%">
@@ -36,7 +36,7 @@ To get started with CodersLand, follow these steps:
    pip install -r requirements.txt
    ```
 
-4. Configure GitHub API Access: Obtain a GitHub API access token by creating a new personal access token in your GitHub account settings. Rename the `config-demo.py` file to `config.py` in the `main` folder  and update site name, url and the `GITHUB_PAT` variable with your private access token.
+4. Configure GitHub API Access: Obtain a GitHub API access token by creating a new personal access token in your GitHub account settings. Rename the `config-demo.py` file to `config.py` in the `main` folder  and update `SITE_NAME`, `SITE_URL` and the `GITHUB_PAT` variable with your private access token.
 
 5. Run Database Migrations: Apply the database migrations using the following command:
    ```
