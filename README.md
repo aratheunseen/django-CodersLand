@@ -10,8 +10,8 @@ CodersLand
 <p align="center">
     <!-- img alt="coderslands' License" src="https://img.shields.io/github/license/aratheunseen/codersland?style=for-the-badge">
     <img alt="coderslands' Workflow Status (with branch)" src="https://img.shields.io/github/actions/workflow/status/aratheunseen/codersland/django.yml?branch=main&label=Build&style=for-the-badge" -->
-    <img alt="coderslands' Code Size" src="https://img.shields.io/github/languages/code-size/aratheunseen/codersland?style=for-the-badge">
     <img alt="Top Language used in codersland" src="https://img.shields.io/github/languages/top/aratheunseen/codersland?style=for-the-badge&logo=dart&color=lightblue">
+    <img alt="coderslands' Code Size" src="https://img.shields.io/github/languages/code-size/aratheunseen/codersland?style=for-the-badge">
 </p>
 
 <img src="https://github.com/aratheunseen/codersland/assets/62181222/2dde57a3-d801-4378-9915-8050448f0484" width="100%">
