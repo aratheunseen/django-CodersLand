@@ -21,8 +21,6 @@ CodersLand
 
 ## Getting Started
 
-Getting Started with CodersLand
-
 To get started with CodersLand, follow these steps:
 
 1. Clone the Repository: Clone the CodersLand repository from GitHub using the command:
