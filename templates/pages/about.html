@@ -15,7 +15,11 @@
               class="avatar-image avatar-image-large img-fluid"
               alt=""
             />
+            {% if user.type == 'User' %}
             <h1 class="hero-title ms-3 mb-0">Hello! I'm</h1>
+            {% elif user.type == 'Organization' %}
+            <h1 class="hero-title ms-3 mb-0">Hello! We are</h1>
+            {% endif %}
           </div>
 
           <h2 class="mb-4">{{user.name}}</h2>
@@ -274,25 +278,10 @@
             {% if user.hireable %} We are available for taking a project. Please feel free to contact with us.
           {% endif %}
         </p>
-        {% if user.twitter_username or user.hireable %}
+        {% if user.twitter_username %}
         <hr>
         {% endif %}
         <p>
-          {% if user.hireable %}
-          <a class="custom-btn btn" href="mailto:{{user.email}}" rel="nofollow"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-envelope-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
-              /></svg>
-            </a>
-          {% endif %}
           {%if user.twitter_username%}
           <a class="custom-btn btn" href="https://twitter.com/{{user.twitter_username}}" rel="nofollow"
             ><svg
@@ -311,149 +300,6 @@
           {% endif %}
         </p>
           {% endif %}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="about d-lg-none " id="bio-sm">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 col-12 d-none d-lg-block">
-        <img
-          src="{{user.avatar_url}}"
-          class="about-image img-fluid"
-          alt=""
-        />
-      </div>
-
-      <div class="col-lg-6 col-12 col-sm-0 mt-5 mt-lg-0">
-        <div class="about-thumb">
-          <div
-            class="section-title-wrap d-flex justify-content-end align-items-center mb-4"
-          >
-            <h2 class="text-white me-4 mb-0">About Me</h2>
-
-            <img
-              src="{% static '/' %}images/story.png"
-              class="img-fluid"
-              style="height: 25px; width: 25px"
-              alt=""
-            />
-          </div>
-
-          <p>
-            I am
-            <span class="featured-text">
-              <strong>{{user.name}}</strong>
-            </span>
-            . You can also find me by
-            <span class="featured-text">
-              <strong>{{user.login}}</strong>.
-            </span>
-            {% if user.bio %}
-              {{user.bio}}
-            {% endif %}
-            {% if user.location %}
-            I live in
-            <span class="featured-text"><strong>{{user.location}}</strong></span>.
-            {% endif %}
-            {% if user.company %}
-            Currently, I work at
-            <span class="featured-text">
-              <strong>{{user.company}}</strong>
-            </span>.
-            {% endif %} {% if user.blog %} You can read my blog at
-            <a class="featured-text" rel="nofollow" href="{{user.blog}}"
-              >{{user.blog}}</a>. {% endif %}
-          </p>
-
-          <p>
-            I joined GitHub on
-            <span class="featured-text">{{user.created_at}}</span>,
-            {% if user.on_github < 1 %}
-            it's almost a year ago, Yaaay!
-            {% elif user.on_github == 1 %}
-            it's about one year ago, Yaaay!
-            {% else %}
-            it's more than
-            {{user.on_github}} years ago, Yaaay!
-            {% endif %}
-
-            At this moment, I have
-            {% if user.public_repos <= 1 %}
-            {{user.public_repos}} public repository and
-            {% else %}
-            {{user.public_repos}} public repositories
-            {% endif %} and
-
-            {% if user.public_gists <= 1 %}
-            {{user.public_gists}} public gist.
-            {% else %}
-            {{user.public_gists}} public gists.
-            {% endif %}
-
-            I have
-            {% if user.followers <= 1 %}
-            {{user.followers}} follower
-            {% else %}
-            {{user.followers}} followers
-            {% endif %} and I am following
-
-            {% if user.following <= 1 %}
-            {{user.following}} person.
-            {% else %}
-            {{user.following}} people.
-            {% endif %}
-
-            {% if user.twitter_username %}
-              You can follow me on Twitter at
-            <a
-              rel="nofollow"
-              class="featured-text"
-              href="https://twitter.com/{{user.twitter_username}}"
-              > @{{user.twitter_username}}</a>.
-              {% endif %}
-              {% if user.hireable %} I am available for hire. Please feel free to contact with me.
-            {% endif %}
-          </p>
-          {% if user.twitter_username or user.hireable %}
-          <hr>
-          {% endif %}
-          <p>
-            {% if user.hireable %}
-            <a class="custom-btn btn" href="mailto:{{user.email}}" rel="nofollow"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-envelope-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
-                /></svg
-            ></a>
-            {% endif %}
-                        {%if user.twitter_username%}
-            <a class="custom-btn btn" href="https://twitter.com/{{user.twitter_username}}" rel="nofollow"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-twitter"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-                />
-              </svg>
-            </a>
-            {% endif %}
-          </p>
         </div>
       </div>
     </div>
