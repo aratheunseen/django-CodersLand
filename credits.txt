@@ -7,7 +7,7 @@ Bug fixing feature image
 Sun icon
 - Free Icons Library (https://icon-library.com/icon/sun-icon-text-20.html)
 
-Color Schema Tempalte
+Color Schema Template
 - templatemo_578_first_portfolio
 
 User Data
