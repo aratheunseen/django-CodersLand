@@ -18,14 +18,13 @@ urlpatterns = [
     # path('copyright/', copyright, name='copyright'),
 
     # dynamic user pages
-    path('<str:username>/', about, name='about'),  # about page
-    path('<str:username>/connections/', connections,
-         name='connections'),  # connections page
+    path('<str:username>/', about, name='about'),
+    path('<str:username>/connections/', connections, name='connections'),
     path(r'<str:username>/connections/<int:page>/',
-         connections, name='connections page'),  # connections page with pagination
-    path('<str:username>/projects/', projects,
-         name='projects'),  # projects page
-    path(r'<str:username>/projects/<int:page>/',
-         projects, name='projects page'),    # projects page with pagination
-    path('<str:username>/cv/', cv, name='cv'),  # cv page
+         connections, name='connections page'),
+    path('<str:username>/projects/', projects, name='projects'),
+    #     path('<str:username>/projects/<int:page>/', projects, name='projects page'),
+    path(r'<str:username>/projects/<int:project_id>/',
+         project_view, name='project view'),
+    path('<str:username>/cv/', cv, name='cv'),
 ]

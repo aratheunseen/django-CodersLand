@@ -111,6 +111,36 @@ def projects(request, username, page=1):
         return JsonResponse({'error': str(e)}, status=500)
 
 
+def project_view(request, username, project_id):
+
+    about_url = GITHUB_API_URL + '/users/' + username
+    project_url = GITHUB_API_URL + '/users/' + username + '/repos?per_page=100' + \
+        '&page=' + str(1) + '&sort=updated&direction=desc'
+
+    try:
+        about_response = requests.get(about_url, headers=GITHUB_API_HEADERS)
+        repos_response = requests.get(
+            project_url, headers=GITHUB_API_HEADERS)
+
+        about_data = about_response.json()
+        repos_data = repos_response.json()
+
+        for repo in repos_data:
+            if repo['id'] == project_id:
+                repos_data = repo
+                break
+
+        print(repos_data)
+
+        context = {'repo': repos_data, 'current_time': time_now.strftime(
+            "%d %B, %Y %I:%M %p"), 'user': about_data, 'project_id': project_id}
+
+        return render(request, 'pages/project_view.html', context)
+
+    except requests.exceptions.RequestException as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+
 def cv(request, username):
 
     about_url = GITHUB_API_URL + '/users/' + username
