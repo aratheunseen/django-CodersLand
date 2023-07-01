@@ -1,0 +1,56 @@
+{% extends 'base.html '%}
+{% load static %}
+{% block title %} {{user.name}} ({{user.login}})'s followers and following list | {{site_name}} {% endblock %}
+{% block content %}
+
+<section
+  class="hero d-flex justify-content-center align-items-center" style="background: #535da1; padding-top: 100px!important; padding-bottom: 0px; height: 10px;"
+  id="connections">
+</section>
+
+<section class="featured section-padding" id="stats">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-12">
+        <div class="profile-thumb">
+          <div class="profile-title">
+            <h4 class="mb-0">Followers <span class="featured-text" style="float: right;">({{user.followers}})</span></h4>
+          </div>
+
+          <div class="profile-body">
+            {% for follower in followers %}
+            <p>
+              <a href="/{{follower.login}}">
+                <span class="profile-small-title text-center"><img class="rounded-circle align-center" style="height: 40px; width: 40px" alt="{{follower.login}}'s profile picture" src="{{follower.avatar_url}}"></span>
+                <span>{{follower.login}}</span>
+              </a>
+            </p>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+        <div class="profile-thumb">
+          <div class="profile-title">
+            <h4 class="mb-0">Following <span class="featured-text" style="float: right;">({{user.following}})</span></h4>
+          </div>
+
+          <div class="profile-body">
+            {% for following in followings %}
+            <p>
+              <a href="/{{following.login}}">
+                <span class="profile-small-title text-center"><img class="rounded-circle" style="height: 40px; width: 40px" alt="{{following.login}}'s profile picture" src="{{following.avatar_url}}"></span>
+                <span>{{following.login}}</span>
+
+              </a>
+            </p>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
