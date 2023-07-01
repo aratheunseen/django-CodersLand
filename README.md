@@ -59,6 +59,12 @@ CodersLand
     <td><img src="https://github.com/aratheunseen/codersland/assets/62181222/480551d8-871c-4d61-ba3a-90448f1bebff"></td>
     <td><img src="https://github.com/aratheunseen/codersland/assets/62181222/2d4bd25f-6dfb-45b2-ac46-c30fd2780fb5"></td>
   </tr>
+  <tr>
+    <th colspan="2">Organizations' Projects' Details</th>
+  </tr>
+  <tr>
+    <td colspan="2"><img src="https://github.com/aratheunseen/codersland/assets/62181222/33ae5eb5-50a7-4e03-98b0-92cb8d7b686c"></td>
+  </tr>
 </table>
 
 <hr>
