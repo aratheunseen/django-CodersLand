@@ -23,8 +23,8 @@
                     <div class="profile-title">
                     <h4 class="mb-0">
                         {{repo.name}}
-                        <span class="profile-small-title" style="float: right;">
-                            <a href="{{repo.html_url}}" target="_blank" class="btn btn-primary btn-sm">View on GitHub</a>
+                        <span class="profile-small-title" style="float: right; margin-right: -30px;">
+                            <a href="{{repo.html_url}}" target="_blank" style="background-color: #5463c4;color:#fff" class="btn py-2">View on GitHub</a>
                         </span>
                     </h4>
                     {{repo.full_name}}
@@ -43,7 +43,7 @@
 
                 th, td {
                     text-align: center;
-                    padding: 10px;
+                    padding: 15px;
                 }
 
                 th {
@@ -94,7 +94,11 @@
                         <td>{{repo.updated_at}}</td>
                         <td>{{repo.default_branch}}</td>
                         <td>{{repo.pushed_at}}</td>
+                        {% if repo.license %}
                         <td>{{repo.license.name}}</td>
+                        {% else %}
+                        <td>None</td>
+                        {% endif %}
                         <td>#{{repo.id}}</td>
                     </tr>
                 </table>
