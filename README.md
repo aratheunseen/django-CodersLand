@@ -14,7 +14,7 @@ CodersLand
     <img alt="coderslands' Code Size" src="https://img.shields.io/github/languages/code-size/aratheunseen/codersland?style=for-the-badge">
 </p>
 
-<img src="https://github.com/aratheunseen/codersland/assets/62181222/2dde57a3-d801-4378-9915-8050448f0484" width="100%" alter="Portfolio of Linus Torvalds (@torvalds), founder of Linux Foundation">
+<img src="https://github.com/aratheunseen/codersland/assets/62181222/2dde57a3-d801-4378-9915-8050448f0484" width="100%" alt="Portfolio of Linus Torvalds (@torvalds), founder of Linux Foundation">
 <!-- img src="https://github.com/aratheunseen/codersland/assets/62181222/376f0cb2-4e66-4dd5-a2ce-1feb0a456582" width="100%" -->
 
 <hr/>
