@@ -1,0 +1,139 @@
+{% extends 'base.html '%}
+{% load static %}
+{% block title %} {{user.name}} ({{user.login}})'s Projects  | {{site_name}} {% endblock %}
+{% block content %}
+
+{% if user %}
+{% if repo %}
+
+<section
+  class="hero d-flex justify-content-center align-items-center" style="background: #535da1; padding-top: 100px!important; padding-bottom: 0px; height: 10px;"
+  id="projects">
+</section>
+
+<div class="text-center p-3">
+  Design of This Page is Under Construction
+</div>
+
+<section class="featured section-padding" id="projects">
+    <div class="container">
+        <div class="row mb-0">
+            <div class="col-lg-12 col-12">
+                <div class="profile-thumb">
+                    <div class="profile-title">
+                    <h4 class="mb-0">
+                        {{repo.name}}
+                        <span class="profile-small-title" style="float: right; margin-right: -30px;">
+                            <a href="{{repo.html_url}}" target="_blank" style="background-color: #5463c4;color:#fff" class="btn py-2">View on GitHub</a>
+                        </span>
+                    </h4>
+                    {{repo.full_name}}
+                </div>
+            </div>
+        </div>
+        <div class="text-center profile-title">
+            <style>
+                table {
+                    text-align: center;
+                    border-collapse: collapse;
+                    font-size: 16px;
+                    width: 100%;
+                    border: 1px solid #eee;
+                }
+
+                th, td {
+                    text-align: center;
+                    padding: 15px;
+                }
+
+                th {
+                    background-color: #f2f2f2;
+                }
+
+                tr:nth-child(even) {
+                    background-color: #f9f9f9;
+                }
+
+                @media screen and (max-width: 768px) {
+                    table {
+                        font-size: 14px;
+                    }
+                    th, td {
+                        padding: 5px;
+                    }
+                }
+            </style>
+            <div>
+                <table>
+                    <tr>
+                        <th>Stars</th>
+                        <th>Language</th>
+                        <th>Size</th>
+                        <th>Issues</th>
+                        <th>Forks</th>
+                        <th>Watchers</th>
+                    </tr>
+                    <tr>
+                        <td>{{repo.stargazers_count}}</td>
+                        <td>{{repo.language}}</td>
+                        <td>{{repo.size | filesizeformat}}</td>
+                        <td>{{repo.open_issues}}</td>
+                        <td>{{repo.forks}}</td>
+                        <td>{{repo.watchers}}</td>
+                    </tr>
+                    <tr>
+                        <th>Created</th>
+                        <th>Updated</th>
+                        <th>Branch</th>
+                        <th>Pushed</th>
+                        <th>License</th>
+                        <th>ID</th>
+                    </tr>
+                    <tr>
+                        <td>{{repo.created_at}}</td>
+                        <td>{{repo.updated_at}}</td>
+                        <td>{{repo.default_branch}}</td>
+                        <td>{{repo.pushed_at}}</td>
+                        {% if repo.license %}
+                        <td>{{repo.license.name}}</td>
+                        {% else %}
+                        <td>None</td>
+                        {% endif %}
+                        <td>#{{repo.id}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="text-center m-3">
+            {{repo.description}}
+            <style>
+                .tag-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 8px;
+                    justify-content: center;
+                }
+
+                .tag {
+                    display: inline-block;
+                    padding: 8px 12px;
+                    background-color: #f2f2f2;
+                    border-radius: 4px;
+                    font-size: 14px;
+                    color: #333;
+                }
+            </style>
+
+            <div class="tag-container mt-4">
+                {% for tag in repo.topics %}
+                <div class="tag">{{tag}}</div>
+                {% endfor %}
+            </div>
+    </div>
+    </div>
+</section>
+{% endif %}
+{% endif %}
+{% endblock %}
+
