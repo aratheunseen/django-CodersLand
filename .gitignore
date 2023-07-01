@@ -1,3 +1,4 @@
 .env
 .vscode
 main/config.py
+db.sqlite3
