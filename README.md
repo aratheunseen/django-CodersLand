@@ -21,43 +21,43 @@ CodersLand
 
 <table align="center">
   <tr>
-    <th colspan="1">Home</th>
-    <th colspan="2">Feature</th>
+    <th>Home</th>
+    <th>Feature</th>
   </tr>
   <tr>
-    <td colspan="1"><img src="https://github.com/aratheunseen/codersland/assets/62181222/676dd8d0-0c35-4ea5-a12a-88624c4a509d"></td>
-    <td colspan="2"><img src="https://github.com/aratheunseen/codersland/assets/62181222/029dab4c-3686-4203-a017-a6b398bf813a"></td>
+    <td><img src="https://github.com/aratheunseen/codersland/assets/62181222/676dd8d0-0c35-4ea5-a12a-88624c4a509d"></td>
+    <td><img src="https://github.com/aratheunseen/codersland/assets/62181222/029dab4c-3686-4203-a017-a6b398bf813a"></td>
 
   </tr>
   <tr>
-    <th colspan="2">Users' Bio</th>
-    <th colspan="1">Statistics</th>
+    <th>Users' Bio</th>
+    <th>Statistics</th>
   </tr>
   <tr>
-    <td colspan="2"><img src="https://github.com/aratheunseen/codersland/assets/62181222/5e349078-c279-44b9-b7e5-daa1a3e5a634"></td>
-    <td colspan="1"><img src="https://github.com/aratheunseen/codersland/assets/62181222/4d093f34-2133-43cf-8a5d-e1fb1b6defc3"></td>
+    <td><img src="https://github.com/aratheunseen/codersland/assets/62181222/5e349078-c279-44b9-b7e5-daa1a3e5a634"></td>
+    <td><img src="https://github.com/aratheunseen/codersland/assets/62181222/4d093f34-2133-43cf-8a5d-e1fb1b6defc3"></td>
   </tr>
   <tr>
-    <th colspan="3">Organizations' Bio</th>
+    <th colspan="2">Organizations' Bio</th>
   </tr>
   <tr>
-    <td colspan="3"><img src="https://github.com/aratheunseen/codersland/assets/62181222/05e2c812-e2a4-41f0-a749-0f0f486dff29"></td>
+    <td colspan="2"><img src="https://github.com/aratheunseen/codersland/assets/62181222/05e2c812-e2a4-41f0-a749-0f0f486dff29"></td>
   </tr>
   <tr>
-    <th colspan="2">Connections</th>
-    <th colspan="1">CV Download</th>
+    <th>Connections</th>
+    <th>CV Download</th>
   </tr>
   <tr>
-    <td colspan="2"><img src="https://github.com/aratheunseen/codersland/assets/62181222/e9fcbf73-d07b-456c-914f-b6068974633b"></td>
-    <td colspan="1"><img src="https://github.com/aratheunseen/codersland/assets/62181222/c41d76d0-0957-4dae-833d-49f62ee7af3e"></td>
+    <td><img src="https://github.com/aratheunseen/codersland/assets/62181222/e9fcbf73-d07b-456c-914f-b6068974633b"></td>
+    <td><img src="https://github.com/aratheunseen/codersland/assets/62181222/c41d76d0-0957-4dae-833d-49f62ee7af3e"></td>
   </tr>
   <tr>
-    <th colspan="1">Projects</th>
-    <th colspan="2">Projects' Details</th>
+    <th>Projects</th>
+    <th>Projects' Details</th>
   </tr>
   <tr>
-    <td colspan="1"><img src="https://github.com/aratheunseen/codersland/assets/62181222/480551d8-871c-4d61-ba3a-90448f1bebff"></td>
-    <td colspan="2"><img src="https://github.com/aratheunseen/codersland/assets/62181222/2d4bd25f-6dfb-45b2-ac46-c30fd2780fb5"></td>
+    <td><img src="https://github.com/aratheunseen/codersland/assets/62181222/480551d8-871c-4d61-ba3a-90448f1bebff"></td>
+    <td><img src="https://github.com/aratheunseen/codersland/assets/62181222/2d4bd25f-6dfb-45b2-ac46-c30fd2780fb5"></td>
   </tr>
 </table>
 
