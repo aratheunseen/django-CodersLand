@@ -4,7 +4,7 @@ CodersLand
 </h1>
 
 <p align="center">
-  Auto-generate GitHub users' portfolios using Django and the GitHub API.
+  GitHub users' portfolios using Django and the GitHub API.
 </p>
 
 <p align="center">
